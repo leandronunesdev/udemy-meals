@@ -1,12 +1,15 @@
 import React, { useState } from 'react';
 import { Text, View } from 'react-native';
 import AppLoading from 'expo-app-loading';
+import { enableScreens } from 'react-native-screens';
 
 import { createBottomTabNavigator } from 'react-navigation-tabs';
 import { createDrawerNavigator } from 'react-navigation-drawer';
 
 import * as Font from 'expo-font';
 import MealsNavigator from './navigation/MealsNavigator';
+
+enableScreens();
 
 const fetchFonts = () => {
   Font.loadAsync({
